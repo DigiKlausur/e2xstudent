@@ -7,11 +7,11 @@ define([
     'base/js/events',
     'notebook/js/codecell'
 
-], function (require, $, Jupyter, dialog, celltoolbar, events, codecell) {
+], function (require, $, Jupyter, dialog, nbcelltoolbar, events, codecell) {
     "use strict";
 
     let preset_name = "Assignment View";
-    let CellToolbar = celltoolbar.CellToolbar;
+    let CellToolbar = nbcelltoolbar.CellToolbar;
     let highlight = 'highlight';
     let minimized = 'minimized';
 
