@@ -97,7 +97,6 @@ define([
         
         submit() {            
             if (this.assignment) {
-                let that = this;
                 let settings = {
                     cache: false,
                     type: 'POST',

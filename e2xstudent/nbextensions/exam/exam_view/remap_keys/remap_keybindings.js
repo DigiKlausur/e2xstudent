@@ -10,7 +10,7 @@ define([
 							 'ctrl-shift-f', 'ctrl-shift-p', 'p', 'd,d'];
 
 			// Remove shortcuts in command mode
-			for (i in shortcuts) {
+			for (let i in shortcuts) {
 				try {
 					Jupyter.keyboard_manager.command_shortcuts.remove_shortcut(shortcuts[i]);
 
@@ -20,7 +20,7 @@ define([
 			}
 
 			// Remove shortcuts in edit mode
-			for (i in shortcuts) {
+			for (let i in shortcuts) {
 				try {
 					Jupyter.keyboard_manager.edit_shortcuts.remove_shortcut(shortcuts[i]);
 
