@@ -14,7 +14,6 @@ define([
     let CellToolbar = celltoolbar.CellToolbar;
     let highlight = 'highlight';
     let minimized = 'minimized';
-    let CodeCell = codecell.CodeCell;
 
     events.on("global_hide.CellToolbar toolbar_rebuild.CellToolbar", function (evt, cell) {
         if (cell.celltoolbar.inner_element.hasClass(highlight)) {
@@ -23,15 +22,6 @@ define([
             cell.celltoolbar.inner_element.removeClass(minimized);
         }
     });
-
-    let is_editable = function(cell) {
-        if (cell.metadata.editable === undefined) {
-            return true;
-        } else if (cell.metadata.editable) {
-            return true;
-        }
-        return false;
-    };
 
     let is_nbgrader_cell = function(cell) {
         return (cell.metadata.hasOwnProperty('nbgrader'));
