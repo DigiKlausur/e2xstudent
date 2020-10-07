@@ -34,9 +34,7 @@ setup_args = dict(
         'e2xstudent': extension_files,
     },
     install_requires=[
-        "jupyter",
-        "notebook>=4.2",
-        "nbconvert==5.6.1",
+        "e2xgrader"
     ]
 )
 
