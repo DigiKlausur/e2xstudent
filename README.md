@@ -1,2 +1,2 @@
 # e2xstudent
-Student version of the e2xgrader with extensions
+Student version of e2xgrader with extensions
